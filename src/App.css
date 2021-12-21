@@ -1,0 +1,131 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css");
+* {
+  margin: 0px;
+  padding: 0px;
+  line-height: 50%;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+.center {
+  display: grid;
+  place-items: center;
+}
+.main {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 40rem;
+  height: 60vh;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 5px 5px 20px rgba(160, 6, 6, 0.521);
+  border-radius: 15px;
+}
+
+.form {
+  margin: 5rem;
+  display: inline-flex;
+  height: 5vh;
+  width: 40vw;
+  overflow: hidden;
+}
+input {
+  width: 30vw;
+  border-radius: 45px 0px 0px 45px;
+  outline: none;
+  padding: 0.5rem;
+  text-transform: capitalize;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+button {
+  padding: 0.5rem;
+  width: 10vw;
+  border: none;
+  border-radius: 0px 15px 15px 0px;
+  background: cyan;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 130%;
+  z-index: 0;
+  cursor: pointer;
+  margin: 0.1rem;
+}
+
+.main .weatherIcon {
+  background: white;
+  color: black;
+  height: 35%;
+  width: 100%;
+}
+
+.main .weatherInfo {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: whitesmoke;
+  width: 100%;
+  height: 40%;
+  background: black;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.weatherInfo .percent {
+  width: 30%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  margin: auto;
+  font-size: 350%;
+  font-family: monospace;
+}
+.weatherInfo .details {
+  width: 35%;
+  height: 100%;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  justify-content: center;
+  align-content: center;
+}
+.details h3 {
+  font-size: 170%;
+  margin: 0.3rem;
+}
+.weatherInfo .dateTime {
+  width: 35%;
+  height: 100%;
+  background: rgb(4, 163, 163);
+  justify-content: center;
+  align-content: center;
+  line-height: 200%;
+  padding-left: 02rem;
+}
+.main .weatherDesc {
+  width: 100%;
+  height: 25%;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.weatherDesc .block {
+  width: 25%;
+  height: 100%;
+  display: inline-flex;
+  justify-content: space-around;
+}
+.block p {
+  margin: auto;
+  line-height: 100%;
+}
+.block .wi {
+  color: rgb(27, 155, 155);
+  font-size: 150%;
+}
+
+.wi {
+  font-size: 500%;
+}
